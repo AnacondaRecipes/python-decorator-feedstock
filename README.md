@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Better living through Python with decorators
+Summary: Better living through Python with decorators.
 
 
 
