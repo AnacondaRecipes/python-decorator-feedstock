@@ -1,4 +1,4 @@
-{% set version = "4.0.10" %}
+{% set version = "4.0.11" %}
 
 package:
   name: decorator
@@ -7,7 +7,7 @@ package:
 source:
   fn: decorator-{{ version }}.tar.gz
   url: https://github.com/micheles/decorator/archive/{{ version }}.tar.gz
-  sha256: 89d9874d29f422ad97a2769646a1a9256bb365a79ddfbbda71a62f33e774100d
+  sha256: cb2d6dfefe7905e9382afd06fee132da5adda30f3846d1cfad0da3e02b3f248a
 
 build:
   number: 0
@@ -28,7 +28,7 @@ about:
   home: https://github.com/micheles/decorator
   license: BSD 3-Clause
   license_file: LICENSE.txt
-  summary: Better living through Python with decorators
+  summary: 'Better living through Python with decorators.'
 
 extra:
   recipe-maintainers:
