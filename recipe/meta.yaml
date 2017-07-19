@@ -1,4 +1,4 @@
-{% set version = "4.0.11" %}
+{% set version = "4.1.1" %}
 
 package:
   name: decorator
@@ -6,17 +6,17 @@ package:
 
 source:
   fn: decorator-{{ version }}.tar.gz
-  url: https://github.com/micheles/decorator/archive/{{ version }}.tar.gz
-  sha256: cb2d6dfefe7905e9382afd06fee132da5adda30f3846d1cfad0da3e02b3f248a
+  url: https://pypi.io/packages/source/d/decorator/decorator-{{ version }}.tar.gz
+  sha256: d48a0a1107a1e72ebd603ae3f9b06e4b9109f7fa92e28152a710adc4d37bf6e9
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
